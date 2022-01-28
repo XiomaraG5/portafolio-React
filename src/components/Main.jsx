@@ -40,7 +40,7 @@ export const Main = () => {
                         </li>
                         <li>
                             <i class="bi bi-lightning-fill"></i>
-                            React native
+                            React.js
                         </li>
                         <li>
                             <i class="bi bi-lightning-fill"></i>

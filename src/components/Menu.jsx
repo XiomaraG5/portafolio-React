@@ -13,7 +13,7 @@ export const Menu = ({setMenu}) => {
         <NavLink style={({ isActive }) => isActive ? { color: "LightSeaGreen" } : { color: "lightgrey" }}
         to={"/proyectos"} onClick={()=>setMenu(false)}><i className="bi bi-signpost"></i> Proyectos</NavLink>
         <NavLink style={({ isActive }) => isActive ? { color: "LightSeaGreen" } : { color: "lightgrey" }}
-         to={"/contacto"} onClick={()=>setMenu(false)}> <i className="bi bi-signpost"></i>  Contactos</NavLink>
+         to={"/contacto"} onClick={()=>setMenu(false)}> <i className="bi bi-signpost"></i>  Contacto</NavLink>
         </div>
     </div>
   )

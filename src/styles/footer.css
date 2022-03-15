@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    padding: 2%;
+    padding-bottom: 0;
+    height: 20vh;
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+.footer p{
+    width: 100%;
+    text-align: center;
+    color: #333;
+    padding: 2%;
+    padding-bottom: 0;
+    align-self: flex-end;
+}
+.div_footer a{
+    text-decoration: none;
+    color: #333;
+}
+.div_footer a:hover{
+    color: lightseagreen;
+}

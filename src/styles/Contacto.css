@@ -1,0 +1,48 @@
+.contacto{
+    height: 70vh;
+    padding-top: 5%;
+}
+.contacto h2{
+    text-align: center;
+    color: #ccc;
+    font-size: 1.7rem;
+    font-family: 'Righteous', cursive;
+}
+.contacto form{
+    width: 80%;
+    margin: auto;
+    margin-top: 8%;
+}
+.contacto form input, .contacto form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid teal;
+    padding: 1%;
+    color: white;
+}   
+.contacto form input::placeholder, .contacto form textarea::placeholder{
+    color: #ccc;
+}
+
+.contacto form input:focus, .contacto form textarea:focus{
+    box-shadow:  2px 1px 3px teal ,-2px -1px 3px teal ;
+    border: none;
+    outline: none;
+}
+.btn{
+    width: 50%;
+    align-self: center;
+    box-shadow:  2px 1px 3px teal ,-2px -1px 3px teal;
+    border-radius: 20px;
+}
+.btn:hover{
+     box-shadow:  2px 1px 3px LightSeaGreen 
+      inset ,-2px -1px 3px LightSeaGreen  inset, 2px 1px 3px teal ,-2px -1px 3px teal ;
+      color: lightseagreen;
+}
+@media (max-width:500px){
+    .contacto h2{
+        font-size: 1rem;
+        padding: 2%;
+    }
+}

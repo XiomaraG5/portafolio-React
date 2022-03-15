@@ -1,0 +1,129 @@
+.Navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    padding-top: 0%;
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+}
+.Navbar .logo{
+    padding-top: 3%;
+    width: 25%;
+    height: auto;
+}
+.Navbar .logo .rectangulo{
+    width: 30px;
+    height: 30px;
+    border-right: 10px solid white;
+    border-bottom: 10px solid LightSeaGreen;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.Navbar .logo .extremo1{
+    height: 30px;
+    width: 10px;
+    background-color: #fff6;
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    animation: logoExtremo1 7s ;
+}
+.Navbar .logo .extremo2{
+    height: 10px;
+    width: 30px;
+    background-color:  #20B2AA36;
+    position: absolute;
+    bottom: -10px;
+    right: -30px;
+    animation: logoExtremo2 7s ;
+}
+.circle1{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin-top: 24px;
+    animation: circle1 7s ;
+    border-radius: 100px;
+}
+.circle2{
+    width: 10px;
+    height: 10px;
+    background-color: LightSeaGreen;
+    margin-left: 23px;
+    animation: circle2 7s ;
+    border-radius: 100px;
+}
+
+@keyframes logoExtremo1 {
+    from{ bottom: -10px; height: 20px;}
+    to{bottom: -30px;height: 30px;}
+}
+@keyframes logoExtremo2{
+    from{ right: -10px; width: 20;}
+    to{right: -30px;width: 30;}
+}
+@keyframes circle1{
+    from{ margin-top: 15px; background-color:  #20B2AA36; border-radius: none;}
+    to{margin-top: 24px;
+    border-radius: 100px;}
+}
+@keyframes circle2{
+    from{ margin-left: 15px;background-color:  #20B2AA36;border-radius: none;}
+    to{margin-left: 23px;
+    border-radius: 100px;}
+}
+.menu{
+    position: absolute;
+    z-index: 40;
+    background-color: #0d0d0d;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    padding: 2%;
+    letter-spacing: 12px;
+}
+
+.menuList{
+    height: 80vh;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.menuList a{
+    text-decoration: none;
+    color: #fff6;
+}
+.bi-x-octagon{
+    text-align: right;
+    color: teal;
+}
+@keyframes menu {
+    0%{ content: "";}
+    25%{content: "M";}
+    50%{content: "Me";}
+    75%{content: "Men";}
+    100%{content: "Menú";}
+
+}
+@media (min-width:800px) {
+    .menu::after{
+    content: " Menú";
+    top: 30%;
+    position:absolute;
+    animation: menu 5s infinite;
+    font-size: 10rem;
+    letter-spacing: 20px;
+    color: #0a0a0a;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+}
+@media (mix-width:400px) {
+    .menuList a{
+        font-size: 1rem !important;
+        letter-spacing: 10px;
+    }
+}

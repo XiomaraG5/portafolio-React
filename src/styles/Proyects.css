@@ -1,0 +1,46 @@
+.ConProyectos{
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ConProyectos a{
+    width: 40%;
+    height: 300px;
+    margin-top: 5%;
+    padding: 3%;
+    background-color: transparent;
+    border-radius: 10px;
+     box-shadow:  2px 1px 3px teal ,-2px -1px 3px teal ;
+    text-decoration: none;
+}
+.ConProyectos a:hover{
+     box-shadow:  2px 1px 3px LightSeaGreen 
+      inset ,-2px -1px 3px LightSeaGreen  inset, 2px 1px 3px teal ,-2px -1px 3px teal ;
+}
+.ConProyectos a img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.project-title, .ConProyectos  h2{
+    color: lightseagreen;
+    margin-top: 2%;
+    text-align: center;
+}
+.ConProyectos  h2{
+    font-family: 'Righteous', cursive;
+}
+.ConProyectos .bi-github{
+    display: block;
+    font-size: 120px;
+    width: 100%;
+    color: lightseagreen;
+    text-align: center;
+}
+@media (max-width:550px){
+    .ConProyectos a{
+        width: 80%;
+    }
+}

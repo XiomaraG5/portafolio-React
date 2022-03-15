@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import 'footer.css';
+@import 'Navbar.css';
+@import 'About.css';
+@import'Proyects.css';
+@import'Contacto.css';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    position: relative;
+    background-color: #0d0d0d;
+}
+.contenedor_inicial{
+    display: flex;
+    flex-direction: column;
+    height:70vh;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+    font-family: 'Righteous', cursive;
+    overflow: hidden;
+    
+}
+.contenedor_inicial .h1{
+    font-size: 3rem;
+    text-shadow:  2px 1px 2px LightSeaGreen  ;
+    color: #eee;
+}
+.contenedor_inicial .p{
+        width: 120vw;
+        font-size: 1.5rem;
+        color: #eee;
+    }
+
+@media (max-width:500px){
+    .contenedor_inicial .h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width:400px){
+    .contenedor_inicial .h1{
+        font-size: 1.7rem;
+    }
+}

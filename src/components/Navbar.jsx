@@ -1,25 +1,30 @@
-import React, { Component } from 'react';
-import { AboutMe,  Navegador} from '../styles/styles';
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Menu } from './Menu'
 
-export default class Navbar extends Component {
-
-
-    render() {
-        return (
-            <div className='encabezado'>
-                <Navegador>
-                        <p>LOGO</p>
-                        <div className='menuNav'>
-                            <i>Hola</i>
-                            <i>Proyectos</i>
-                            <i>Contacto</i>
-                        </div>
-                </Navegador>
-                <AboutMe>
-                    <h1 className='AboutMeName'>¡Hola, Soy Xiomara Garcia!</h1>
-                    <p className='AboutMeRole'>Front-end Developer</p>
-                </AboutMe>
+export const Navbar = () => {
+    const [menu,setMenu]=useState(false)
+    const navigate = useNavigate()
+  return (
+    <div className='Navbar'>
+        <div className='logo' onClick={()=>navigate('landing')}>
+            <div className='rectangulo'>
+    
+            <div className='extremo1'>
+                <div className='circle1'></div>
             </div>
-        )
-    }
+
+            <div className='extremo2'>
+                <div className='circle2'></div>
+            </div>
+            </div>
+        </div>
+        <div>
+            <i className="bi bi-list"
+            onClick={()=>setMenu(true)}>
+            </i>
+        </div>
+        {menu && <Menu setMenu={setMenu}/>}
+    </div>
+  )
 }

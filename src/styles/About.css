@@ -1,0 +1,86 @@
+.about{
+    padding-top: 5%;
+    padding: 2%;
+}
+.about h3, .about h2{
+    text-align: center;
+    text-shadow:  0.5px 0.5px 0.5px LightSeaGreen ;
+    color: #ccc;
+    font-size: 1.7rem;
+    font-family: 'Righteous', cursive;
+    margin-top: 2%;
+}
+.about .descripcion{
+    margin-top: 2%;
+    color: lightgrey;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 15%;
+}
+.pp{
+    width: 70%;
+    margin: auto;
+}
+.about .descripcion .des-foto img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: 0px 5px;
+    background-color: #98a3b7;
+    margin-top: 5%;
+    box-shadow:  4px 1px 5px teal ,-4px -1px 5px teal ;
+}
+.about .btn{
+    width: 25%;
+    padding: 0.2%;
+    border-radius: 0px;
+    border: none;
+    margin-top: 10%;
+    margin-left: 70vw;
+}
+.about .btn:hover{
+    border: none;
+}
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+}
+.tecnologias p{
+    flex-basis: 50%;
+    color: lightgray;
+}
+@media (max-width:990px){
+    .tecnologias{
+        width: 80%;
+    }
+}
+@media (max-width:750px){
+    .about h3, .about h2{
+        font-size: 1.5rem;
+    }
+    .about .descripcion{
+        padding: 5%;
+    }
+    .about .descripcion, .tecnologias p{
+        font-size: 1rem;
+    }
+    .pp{
+        width: 85%;
+    }
+    
+}
+@media (max-width:530px){
+    .about .descripcion{
+        flex-direction: column;
+    }
+    .about .btn{
+        width: 40%;
+        margin-left: 55vw;
+    }
+}

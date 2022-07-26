@@ -1,9 +1,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
 init("3yBxmHrcYLNM1dc6T");
+
 export const Contacto = () => {
-  const form = useRef();
+  const form = useRef(),
+   navigate = useNavigate()
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -11,7 +14,7 @@ export const Contacto = () => {
     emailjs.sendForm('gmail', 'template_uetd9fp', form.current, '3yBxmHrcYLNM1dc6T')
       .then((result) => {
           console.log(result.text);
-          window.location.reload()
+          navigate('landing')
       }, (error) => {
           console.log(error.text);
       });

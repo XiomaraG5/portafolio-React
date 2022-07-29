@@ -1,4 +1,4 @@
-import {  Routes, Route, BrowserRouter } from "react-router-dom"
+import {  Routes, Route, BrowserRouter, Navigate } from "react-router-dom"
 import React from 'react';
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
@@ -17,8 +17,7 @@ export const AppRouters =()=>{
               <Route path="/xiomara" element={<About/>} /> 
               <Route path="/proyectos" element={<Proyectos />} />
               <Route path="/contacto" element={<Contacto />}/>
-              <Route path="/*" element={<Principal />} />
-              
+              <Route path="/*" element={<Navigate to='/landing' />} />
           </Routes>
           <Footer />
       </BrowserRouter>;

@@ -1,6 +1,6 @@
 import React from 'react'
 import foto from './assets/insta1.jpg'
-import Cv from './assets/CV-XiomaraGarcia.pdf'
+import Cv from './assets/Cv-Xiomara.pdf'
 export const About = () => {
   return (
     <div className='about'>
@@ -8,7 +8,7 @@ export const About = () => {
         <div className='descripcion d-flex'>
             <div className='pp'>
                 <p>
-                Soy junior Fronend Developer, al descubrir la programación quedé enamorada
+                Soy Fronend Developer, al descubrir la programación quedé enamorada
                 de la comunidad, la creatividad y la posibilidad de impactar en la sociedad
                 <br />
                 En cuanto a mis intereses, me gusta capacitarme constantemente,
@@ -24,17 +24,17 @@ export const About = () => {
         <h3>Tecnologias que manejo:</h3>
         <div className='tecnologias'>
             <p><i className="bi bi-lightning-fill"></i> HTML, CSS3, Sass, Boostrap, Chackra</p>
-            <p><i className="bi bi-lightning-fill"></i>Grid CSS, Flex CSS </p>
+            <p><i className="bi bi-lightning-fill"></i> Grid CSS, Flex CSS </p>
             <p><i className="bi bi-lightning-fill"></i> JavaScript vanilla</p>
             <p><i className="bi bi-lightning-fill"></i> Consumo de APIs con JavaScript</p>
             <p><i className="bi bi-lightning-fill"></i> React.js</p>
             <p><i className="bi bi-lightning-fill"></i>Control de versiones con GiT. GitHub </p>
             <p><i className="bi bi-lightning-fill"></i> Redux</p>
             <p><i className="bi bi-lightning-fill"></i> Friebase</p>
-            <p><i className="bi bi-lightning-fill"></i> strapi</p>
-            <p><i className="bi bi-lightning-fill"></i> Figma</p>
-            <p><i className="bi bi-lightning-fill"></i> react-native</p>
-            <p><i className="bi bi-lightning-fill"></i> node.js</p>
+            <p><i className="bi bi-lightning-fill"></i> Strapi</p>
+            <p><i className="bi bi-lightning-fill"></i> React-native</p>
+            <p><i className="bi bi-lightning-fill"></i> Familiaridad con Figma</p>
+            {/* <p><i className="bi bi-lightning-fill"></i> node.js</p> */}
         </div>
         <a href={Cv} download={`${Cv}`} target="_blank" rel="noreferrer"
         className='btn p-1'>Descargar Cv</a>
